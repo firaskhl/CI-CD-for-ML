@@ -18,9 +18,7 @@ jobs:
       - name: Format
         run: make format
       - name: Create Directories
-        run: | 
-          mkdir -p Results
-          mkdir -p Model
+        run: mkdir -p Results && mkdir -p Model
       - name: Train
         run: make train
       - name: Evaluation
